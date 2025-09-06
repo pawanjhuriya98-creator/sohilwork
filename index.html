@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhatsApp Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Brand Official</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #25d366, #128c7e);
-      color: white;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e09d1a, #114d2f);
+      color: #fff;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
     }
-    h1 {
+    header {
+      padding: 30px 20px;
+    }
+    header h1 {
       font-size: 2.5rem;
-      margin: 20px 0;
+      margin: 10px 0;
     }
-    p {
+    header h2 {
       font-size: 1.2rem;
-      margin-bottom: 20px;
+      background: black;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin: 10px 0;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      color: black;
+      border-radius: 15px;
+      width: 280px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .btn-container {
+      margin: 30px 0;
     }
     .btn {
       display: inline-block;
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      background: white;
-      color: #128c7e;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px;
-      transition: 0.3s;
-    }
-    .btn:hover {
       background: #25d366;
       color: white;
+      padding: 14px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #128c7e;
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Landing Page</h1>
-  <p>Click below to connect with me on WhatsApp instantly 🚀</p>
-  <a class="btn" href="https://wa.me/918740012676" target="_blank">Chat on WhatsApp</a>
-  <a class="btn" href="https://wa.me/918740012676?text=Hello%2C%20I%20am%20interested!" target="_blank">Send Quick Message</a>
+
+  <header>
+    <h1>MY BRAND OFFICIAL</h1>
+    <h2>Trusted Since 2010</h2>
+    <p>Showcasing our work with style 🚀</p>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://via.placeholder.com/280x500.png?text=Mockup+1" alt="Mockup 1">
+      <p>Feature 1 description goes here.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/280x500.png?text=Mockup+2" alt="Mockup 2">
+      <p>Feature 2 description goes here.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/280x500.png?text=Mockup+3" alt="Mockup 3">
+      <p>Feature 3 description goes here.</p>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <a href="https://wa.me/918740012676" class="btn" target="_blank">Chat on WhatsApp</a>
+    <a href="https://wa.me/918740012676?text=Hi%20I%20am%20interested!" class="btn" target="_blank">Send Quick Message</a>
+    <a href="https://wa.me/918740012676" class="btn" target="_blank">Contact Now</a>
+  </div>
+
+  <footer>
+    &copy; 2025 My Brand. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
